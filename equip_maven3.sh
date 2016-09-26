@@ -6,8 +6,8 @@
 # Licence: MIT
 # to run: wget --no-check-certificate https://github.com/resilva87/ubuntu-equip/raw/master/equip_maven3.sh && bash equip_maven3.sh [latest_version]
 
-if [ -d "/opt/maven" ]; then
-	echo "Maven already installed in /opt/maven, skipping!"
+if [ -d "~/tools/maven" ]; then
+	echo "Maven already installed in ~/tools/maven, skipping!"
 	rm -f equip_maven3.sh
 	exit 0
 fi
