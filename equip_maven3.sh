@@ -29,9 +29,7 @@ mkdir maven
 tar -zxvf $FILENAME -C maven --strip-components 1
 
 # Will copy to /opt
-mv maven /vagrant/tools/
-echo 'M2_HOME=/vagrant/tools/maven' >> ~/.bashrc
-echo 'PATH=$PATH:M2_HOME/bin' >> ~/.bashrc
+mv maven /vagrant/tools/maven
 
 # Cleanup
 rm -f $FILENAME
