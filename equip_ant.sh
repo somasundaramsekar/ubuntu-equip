@@ -15,6 +15,8 @@ sudo mv apache-ant-1.9.7 /usr/local
 
 sudo ln -s /usr/local/apache-ant-1.9.7/bin/ant /usr/bin/ant
 
+rm equip_base.sh
+rm equip_ant.sh
 rm apache-ant-1.9.7-bin.tar.gz
 
 
