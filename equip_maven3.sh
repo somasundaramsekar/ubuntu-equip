@@ -6,8 +6,8 @@
 # Licence: MIT
 # to run: wget --no-check-certificate https://github.com/resilva87/ubuntu-equip/raw/master/equip_maven3.sh && bash equip_maven3.sh [latest_version]
 
-if [ -d "/vagrant/tools/maven" ]; then
-	echo "Maven already installed in /vagrant/tools/maven, skipping!"
+if [ -d "/usr/local/maven" ]; then
+	echo "Maven already installed in /usr/local/maven, skipping!"
 	rm -f equip_maven3.sh
 	exit 0
 fi
@@ -29,10 +29,12 @@ mkdir maven
 tar -zxvf $FILENAME -C maven --strip-components 1
 
 # Will copy to /opt
-mv maven /vagrant/tools/maven
+sudo mv maven /usr/local
+
+sudo ln -s /usr/local/maven/bin/mvn /usr/bin/mvn
 
 # Cleanup
 rm -f $FILENAME
 rm -f equip_maven3.sh
 
-echo "Installed in /vagrant/tools/maven"
+echo "Installed in /usr/local/maven"
