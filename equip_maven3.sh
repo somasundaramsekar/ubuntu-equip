@@ -30,8 +30,8 @@ tar -zxvf $FILENAME -C maven --strip-components 1
 
 # Will copy to /opt
 sudo mv maven /opt/
-sudo export MAVEN_HOME="/opt/maven"
-sudo export PATH=$PATH:$MAVEN_HOME/bin
+sudo echo 'M2_HOME=/opt/maven' >> ~/.bashrc
+sudo echo 'PATH=$PATH:M2_HOME/bin' >> ~/.bashrc
 
 # Cleanup
 rm -f $FILENAME
