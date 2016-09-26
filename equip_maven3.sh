@@ -29,9 +29,9 @@ mkdir maven
 tar -zxvf $FILENAME -C maven --strip-components 1
 
 # Will copy to /opt
-sudo mv maven /opt/
-sudo echo 'M2_HOME=/opt/maven' >> ~/.bashrc
-sudo echo 'PATH=$PATH:M2_HOME/bin' >> ~/.bashrc
+mv maven ~/tools/
+echo 'M2_HOME=/opt/maven' >> ~/.bashrc
+echo 'PATH=$PATH:M2_HOME/bin' >> ~/.bashrc
 
 # Cleanup
 rm -f $FILENAME
