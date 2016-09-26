@@ -2,7 +2,7 @@
 
 wget --no-check-certificate https://github.com/aglover/ubuntu-equip/raw/master/equip_base.sh && bash equip_base.sh
 
-sudo apt-get install mysql-server
+sudo apt-get install -y mysql-server
 
 sudo service mysql start
 
