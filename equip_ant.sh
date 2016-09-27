@@ -9,9 +9,10 @@
 wget http://mirror.fibergrid.in/apache//ant/binaries/apache-ant-1.9.7-bin.tar.gz
 
 tar -zxf apache-ant-1.9.7-bin.tar.gz
-sudo mv apache-ant-1.9.7 /usr/local
+mkdir -p /home/vagrant/tools
+mv apache-ant-1.9.7 /home/vagrant/tools
 
-sudo ln -s /usr/local/apache-ant-1.9.7/bin/ant /usr/bin/ant
+ln -s /home/vagrant/tools/apache-ant-1.9.7/bin/ant /usr/bin/ant
 
 
 
