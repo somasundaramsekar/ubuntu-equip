@@ -12,7 +12,7 @@ tar -zxf apache-ant-1.9.7-bin.tar.gz
 mkdir -p /home/vagrant/tools
 mv apache-ant-1.9.7 /home/vagrant/tools
 
-ln -s /home/vagrant/tools/apache-ant-1.9.7/bin/ant /usr/bin/ant
+sudo ln -s /home/vagrant/tools/apache-ant-1.9.7/bin/ant /usr/bin/ant
 
 
 
